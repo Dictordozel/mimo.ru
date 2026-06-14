@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./alpine.js" defer></script>
+    <script src="./browser@4.js" defer></script>
+    <title>mimo</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'Jura';
+        src: url('/fonts/Jura-VariableFont_wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: normal;
+    }
+</style>
+
+<body x-data="getData()">
+    <div class="flex flex-col">
+        <header class="select-none  flex flex-col">
+            <div class="relative z-10 flex justify-center text-stone-900 uppercase">
+                <span class="text-center text-[6rem] lg:text-[16rem] sm:text-[8rem] font-extrabold leading-[0.8]">ми</span>
+                <span class="text-center text-[6rem] lg:text-[16rem] sm:text-[8rem] font-extrabold leading-[0.8]">мо</span>
+            </div>
+        </header>
+        
+        <section class="select-none relative flex-1 pt-40 flex flex-col">
+            <div class="select-none absolute top-0 left-1/2 -translate-x-1/2 flex justify-center text-stone-900 uppercase scale-y-[-1]">
+                <span class="text-center text-[6rem] lg:text-[16rem] sm:text-[8rem] font-extrabold leading-[0.8]">ми</span>
+                <span class="text-center text-[6rem] lg:text-[16rem] sm:text-[8rem] font-extrabold leading-[0.8]">мо</span>
+            </div>
+            <div class="select-none absolute lg:-top-32 sm:-top-16 -top-10 left-1/2 -translate-x-1/2 flex justify-center text-stone-100 uppercase z-50 drop-shadow-2xl drop-shadow-stone-900">
+                <span class="text-center text-[6rem] lg:text-[16rem] sm:text-[8rem] font-extrabold leading-[0.8]">ми</span>
+                <span class="text-center text-[6rem] lg:text-[16rem] sm:text-[8rem] font-extrabold leading-[0.8]">мо</span>
+            </div>
+            <div class="relative z-50 w-[80%] mx-auto pt-20 flex flex-col">
+                <menu class="py-4 flex items-center justify-between mb-20 font-bold text-xl">
+                    <button class="cursor-pointer">ЧТО</button>
+                    <button class="cursor-pointer">КТО</button>
+                    <button class="cursor-pointer">ГДЕ</button>
+                    <button class="cursor-pointer">ЗАЧЕМ</button>
+                </menu>
+                <div class="font-['Jura'] flex flex-col divide-y divide-stone-300 bg-[url('./images/kant.png')] bg-cover">
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32 backdrop-grayscale bg-stone-100/30"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="col-span-2 min-h-32 flex items-center justify-center"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="col-span-2 min-h-32 flex items-center justify-center">
+                             <span class="text-stone-100 text-7xl">ДЖАСТ</span>
+                        </span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32 backdrop-brightness-150 bg-stone-100/50"></span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32 backdrop-grayscale bg-stone-100/30"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32 bg-red-800/30 backdrop-blur-xs transition"></span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32 backdrop-grayscale bg-stone-100/30"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>                        
+                        <span class="col-span-2 min-h-32 flex items-center justify-center">
+                            <!-- <span class="text-stone-100 font-extrabold text-7xl uppercase">ИМИТАЦИЯ</span> -->
+                             <span class="text-stone-100 text-7xl">ДУ</span>
+                        </span>
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32 bg-teal-300/50"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>                        
+                        <span class="min-h-32 backdrop-grayscale bg-stone-100/30"></span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="col-span-2 min-h-32 flex items-center justify-center">
+                            <!-- <span class="text-stone-100 font-extrabold text-7xl uppercase">Коллаборация</span> -->
+                             <span class="text-stone-100 text-7xl">ИТ</span>
+                        </span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32 bg-teal-300/30"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32 bg-teal-300/30"></span>
+                        <span class="min-h-32"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                    <div class="grid grid-cols-4 divide-x divide-stone-300 border border-b-0 border-stone-300">
+                        <span class="min-h-32"></span>
+                        <span class="col-span-2 min-h-32"></span>
+                        <span class="min-h-32"></span>
+                    </div>
+                </div>
+
+                <!-- <h2 class="text-[8rem] font-extrabold leading-[0.8] text-stone-900">Генерация</h2> -->
+            </div>
+
+        </section>
+
+        <div class="select-none flex flex-col mb-5">
+            <span class="font-extrabold text-[10rem] leading-[0.8] text-stone-200 hover:text-stone-900 transition duration-500">ПРОВОКАЦИЯ</span>
+            <span class="self-end font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-900 transition duration-500">КОМПЕТЕНЦИЯ</span>
+            <span class="font-extrabold text-[10rem] leading-[0.8] text-stone-200 hover:text-stone-900 transition duration-500">КОНЦЕПЦИЯ</span>
+            <span class="self-end font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-900 transition duration-500">ИНФОРМАЦИЯ</span>
+            <span class="font-extrabold text-[10rem] leading-[0.8] text-stone-200 hover:text-stone-900 transition duration-500">ИНТЕГРАЦИЯ</span>
+            <span class="self-center font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-900 transition duration-500">РЕАКЦИЯ</span>
+        </div>
+
+        <section class="select-none relative flex-1flex flex-col bg-stone-900">
+            <div class="grid grid-cols-4">
+                    <div class="group relative col-span-4 row-span-8">
+                        <div class="w-full overflow-y-auto  [-ms-overflow-style:none] [scrollbar-width:none] flex flex-col max-h-[80vh]">
+                            
+                                <img src="./images/richi.png" class="w-full object-cover"/>
+                                <img src="./images/richi.png" class="w-full object-cover"/>
+                                <img src="./images/richi.png" class="w-full object-cover"/>
+                            
+
+                        </div>
+                        <!-- <div class="absolute inset-0 flex flex-col justify-center">
+                            <span class="self-center text-stone-100 font-extrabold text-[8rem] leading-[9rem] opacity-0 group-hover:opacity-100 transition duration-700">-ИН-<br>-ТУ-<br>-ИЦ-<br>-ИЯ-</span>
+                        </div> -->
+                    </div>
+                    <div class="col-span-4 flex flex-col mb-5">
+                        <span class="self-start font-extrabold text-[10rem] leading-[0.8] text-stone-400 hover:text-stone-800 transition duration-500">РЕДАКЦИЯ</span>
+                        <span class="self-end font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-700 transition duration-500">КОРРЕКЦИЯ</span>
+                        <span class="self-start font-extrabold text-[10rem] leading-[0.8] text-stone-400 hover:text-stone-600 transition duration-500">КОНСУЛЬТАЦИЯ</span>
+                        <span class="self-end font-extrabold text-[10rem] leading-[0.8] text-stone-400 hover:text-stone-600 transition duration-500">ОРГАНИЗАЦИЯ</span>
+                        <span class="self-start font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-700 transition duration-500">РЕАЛИЗАЦИЯ</span>
+                    </div>
+                    
+                    <div class="row-span-2 bg-[url('./images/shine_02.png')] bg-cover"></div>
+                    <img src="./images/kant03.png" class="col-span-2 row-span-2 object-cover"/>
+                    <div class="row-span-2 bg-[url('./images/bird.png')] bg-cover"></div>                    
+                    <!-- <div class="row-span-2 bg-[url('./images/bird.png')] bg-cover opacity-50 hover:opacity-100 transition duration-500"></div>  -->
+                </div>
+            <!-- <div class="relative z-50 w-[70%] mx-auto py-20 flex flex-col">
+               
+
+            </div> -->
+        </section>
+        <section class="select-none relative flex-1flex flex-col bg-stone-100">
+            <div class="select-none flex flex-col mb-5">
+            <span class="font-extrabold text-[10rem] leading-[0.8] text-stone-200 hover:text-stone-900 transition duration-500">МЕДИТАЦИЯ</span>
+            <span class="self-end font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-900 transition duration-500">ИНСТАЛЛЯЦИЯ</span>
+            <span class="font-extrabold text-[10rem] leading-[0.8] text-stone-200 hover:text-stone-900 transition duration-500">ИННОВАЦИЯ</span>
+            <span class="self-end font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-900 transition duration-500">КОМПОЗИЦИЯ</span>
+            <span class="font-extrabold text-[10rem] leading-[0.8] text-stone-200 hover:text-stone-900 transition duration-500">ПРОЕКЦИЯ</span>
+            <span class="self-center font-extrabold text-[10rem] leading-[0.8] text-stone-300 hover:text-stone-900 transition duration-500">РЕПУТАЦИЯ</span>
+        </div>
+        </section>
+        
+    </div>
+    <div class="fixed inset-0 z-100 pointer-events-none bg-[radial-gradient(circle,rgba(0,0,0,0)_50%,rgba(0,0,0,0.2)_100%)]"></div>
+
+</body>
+<script>
+    function getData() {
+        return { 
+            
+        }
+    }
+</script>
+</html>
