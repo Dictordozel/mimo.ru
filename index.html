@@ -18,7 +18,7 @@
 </style>
 
 <body x-data="getData()">
-    <div class="flex flex-col">
+    <div class="flex flex-col h-screen overflow-y-auto [-ms-overflow-style:none] [scrollbar-width:none]">
         <header class="select-none  flex flex-col">
             <div class="relative z-10 flex justify-center text-stone-900 uppercase">
                 <span class="text-center text-[6rem] lg:text-[16rem] sm:text-[8rem] font-extrabold leading-[0.8]">ми</span>
@@ -138,7 +138,7 @@
         <section class="select-none relative flex-1flex flex-col bg-stone-900">
             <div class="grid grid-cols-4">
                     <div class="group relative col-span-4 row-span-8">
-                        <div class="w-full overflow-y-auto  [-ms-overflow-style:none] [scrollbar-width:none] flex flex-col max-h-[80vh]">
+                        <div class="w-full overflow-y-auto flex flex-col max-h-[80vh]">
                             
                                 <img src="./images/richi.png" class="w-full object-cover"/>
                                 <img src="./images/richi.png" class="w-full object-cover"/>
